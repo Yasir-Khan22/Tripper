@@ -135,6 +135,7 @@ header a:hover {
 
 .about-page-content h1 {
     line-height: 38px;
+    padding: 1rem 0;
 }
 
 .about-page-content p {

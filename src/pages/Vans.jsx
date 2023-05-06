@@ -10,7 +10,7 @@ export default function Vans() {
             .then(data => setVans(data.vans))
     }, [])
 
-    const vanElements = vans?.map(van => {
+    const vanElements = vans?.map(van => (
         <div key={van.id} className="van-tile">
             <Link to={`/vans/${van.id}`}>
                 <img src={van.imageUrl} />
@@ -21,7 +21,7 @@ export default function Vans() {
                 <i className={`van-type ${van.type} selected`}>{van.type}</i>
             </Link>
         </div>
-    })
+    ))
     console.log(vanElements)
     return (
         <div className="van-list-container">
