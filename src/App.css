@@ -142,6 +142,11 @@ header a:hover {
     line-height: 22px;
 }
 
+.about-page-content h1,
+p {
+    font-size: 1.2rem;
+}
+
 .about-page-cta {
     background-color: #FFCC8D;
     color: #161616;

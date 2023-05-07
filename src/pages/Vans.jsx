@@ -7,7 +7,7 @@ export default function Vans() {
     useEffect(() => {
         fetch("http://localhost:3010/vans")
             .then(res => res.json())
-            .then(data => setVans(data.vans))
+            .then(data => setVans(data))
     }, [])
 
     const vanElements = vans?.map(van => (
