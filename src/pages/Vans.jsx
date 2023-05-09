@@ -22,7 +22,7 @@ export default function Vans() {
             </Link>
         </div>
     ))
-    console.log(vanElements)
+
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
