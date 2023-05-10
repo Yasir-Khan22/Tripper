@@ -29,6 +29,7 @@ export default function Vans() {
             <div className="van-list">
                 {vanElements}
             </div>
+            
         </div>
     )
 }
