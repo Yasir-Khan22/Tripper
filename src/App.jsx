@@ -9,10 +9,10 @@ function App() {
   return (
     <>
       <header>
-        <Link to="/" className='site-logo'>#Tripper</Link>
+        <Link to="/" className='site-logo'>Tripper</Link>
         <nav>
           <Link to="/about">About</Link>
-          <Link to="/vans">Vans</Link>
+          <Link to="/vans">Camper Van's</Link>
         </nav>
       </header>
       <Routes>
