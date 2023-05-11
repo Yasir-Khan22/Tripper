@@ -255,6 +255,8 @@ p {
     color: #4D4D4D;
 }
 
-i[class*='van-type-'] {
-    padding: 7px 14px;
+.van-detail-container img {
+    width: 100%;
+    border: 2px solid red;
+    padding: 0 0.2rem;
 }
