@@ -18,7 +18,7 @@ export default function VanDetail() {
         <div className="van-detail-container">
             {van ? (<div>
                 <img src={van.imageUrl} />
-                <i className={`van-type ${van.type} selected`}>{van.type}</i>
+                <a className="cta-btn">{van.type}</a>
                 <h1>{van.name}</h1>
                 <p className="van-price"><span>${van.price}</span>/day</p>
                 <p>{van.description}</p>
