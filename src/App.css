@@ -117,7 +117,7 @@ p {
     width: 100%;
     margin-top: 27px;
     padding-block: .75rem;
-    color: white;
+    color: #636363;
     font-weight: 700;
     border-radius: 5px;
     cursor: pointer;
@@ -152,6 +152,8 @@ p {
 .about-page-content h1,
 p {
     font-size: 1.2rem;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
 }
 
 .about-page-cta {
@@ -168,9 +170,10 @@ p {
     padding-block: 37px;
 }
 
-.about-page-cta .link-button {
+.about-page-cta .link-button,
+.link-button {
     background-color: #bdbdbd;
-    color: white;
+    color: #636363;
     border-radius: 10px;
 }
 
@@ -235,6 +238,11 @@ p {
 .van-type.rugged:hover,
 .van-type.rugged.selected {
     background-color: #115E59;
+    display: block;
+    margin: 0.5rem;
+    max-width: fit-content;
+    font-size: 20px;
+
 }
 
 .van-type.luxury:hover,
@@ -257,6 +265,5 @@ p {
 
 .van-detail-container img {
     width: 100%;
-    border: 2px solid red;
     padding: 0 0.2rem;
 }

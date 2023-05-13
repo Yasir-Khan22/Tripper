@@ -19,7 +19,7 @@ export default function Vans() {
                     <h3>{van.name}</h3>
                     <p>${van.price}<span>/day</span></p>
                 </div>
-                <i className={`van-type ${van.type} selected`}>{van.type}</i>
+                <i style={{ display: "block", marginTop: "0.1rem" }} className={`van-type ${van.type} selected`}>{van.type}</i>
             </Link>
         </div>
     ))
