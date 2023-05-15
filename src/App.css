@@ -190,10 +190,10 @@ p {
     margin-top: 57px;
 }
 
-.van-tile a {
+/* .van-tile a {
     text-decoration: none;
     color: #FFF7ED;
-}
+} */
 
 .van-tile h1 {
     border: 2px solid red;
@@ -220,64 +220,10 @@ p {
     background: #636363;
     padding-inline: 0.6rem;
     padding-block: 0.6rem;
+    border: 2px solid red;
+    text-decoration: none;
+    color: #FFF7ED;
 }
-
-/* .van-type {
-    height: 34px;
-    padding: 6px 26px;
-    font-style: normal;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    background-color: #FFEAD0;
-    color: #4D4D4D;
-    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.van-type:hover {
-    color: #FFEAD0;
-}
-
-.van-type:focus {
-    outline: none;
-}
-
-.van-type.selected {
-    color: #FFEAD0;
-}
-
-.van-type.simple:hover,
-.van-type.simple.selected {
-    background-color: #E17654;
-} */
-
-/* .van-type.rugged:hover,
-.van-type.rugged.selected {
-    background-color: #115E59;
-    display: block;
-    margin: 0.5rem;
-    max-width: fit-content;
-    font-size: 20px;
-
-}
-
-.van-type.luxury:hover,
-.van-type.luxury.selected {
-    background-color: #161616;
-}
-
-.van-type.clear-filters {
-    margin-left: -20px;
-    height: 34px;
-    padding: 6px 26px;
-    font-style: normal;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    text-decoration: underline;
-    background-color: transparent;
-    color: #4D4D4D;
-} */
 
 .van-detail-container img {
     width: 100%;

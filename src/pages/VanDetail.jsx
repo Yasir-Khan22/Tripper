@@ -5,8 +5,6 @@ export default function VanDetail() {
     const [van, setVan] = useState();
 
     const params = useParams();
-    console.log(params)
-
 
     useEffect(() => {
         fetch(`http://localhost:3010/vans/${params.id}`)
