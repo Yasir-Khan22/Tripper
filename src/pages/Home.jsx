@@ -4,7 +4,7 @@ function Home() {
     return (
         <div className="home-container">
             <h1>You got the travel plans, we got the travel vans.</h1>
-            <p>Add adventure to your life by joining the #vanlife movement. Rent the perfect van to make your perfect road trip.</p>
+            <p>Live adventurous life by joining the Tripper movement. Rent the perfect TruckLoad/Van/Camping Wagen to make your road trip perfect.</p>
             <Link to="vans">Find your van</Link>
             {/* <p>{response}</p> */}
         </div>

@@ -36,7 +36,6 @@ body {
 }
 
 header {
-    height: 110px;
     display: flex;
     align-items: center;
     padding-block: 10px;
@@ -152,8 +151,8 @@ p {
 .about-page-content h1,
 p {
     font-size: 1.2rem;
-    padding-inline: 0.5rem;
-    padding-block: 1.2rem;
+    margin: 0.6rem;
+
 }
 
 .about-page-cta {
@@ -177,7 +176,6 @@ p {
     border-radius: 10px;
 }
 
-
 .van-list-container {
     padding-inline: 23px
 }
@@ -189,11 +187,6 @@ p {
     gap: 34px;
     margin-top: 57px;
 }
-
-/* .van-tile a {
-    text-decoration: none;
-    color: #FFF7ED;
-} */
 
 .van-tile h1 {
     border: 2px solid red;
@@ -220,12 +213,52 @@ p {
     background: #636363;
     padding-inline: 0.6rem;
     padding-block: 0.6rem;
-    border: 2px solid red;
     text-decoration: none;
+    border-radius: 5px;
     color: #FFF7ED;
+    display: block;
+    max-width: fit-content;
+    margin-left: 4px;
+    margin-top: 20px;
 }
 
 .van-detail-container img {
-    width: 100%;
+    border-radius: 10px;
     padding: 0 0.2rem;
+}
+
+.van-detail-container h1 {
+    margin-inline: 5px;
+    margin-block: 15px;
+
+
+}
+
+.van-detail-container .link-button {
+    margin: 5px;
+    font-size: 1.2rem;
+    background-color: #bdbdbd;
+    color: #636363;
+}
+
+@media only screen and (max-width: 425px) {
+    header .site-logo {
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    header nav {
+        display: none;
+    }
+
+
+    .home-container p {
+
+        max-width: min-content;
+    }
+
+    .home-container a {
+        max-width: 85%;
+    }
+
 }
