@@ -262,3 +262,20 @@ p {
     }
 
 }
+
+.host__navigation {
+    display: flex;
+}
+
+.host__navigation a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 500;
+    padding: 5px 20px;
+    margin-top: 2rem;
+}
+
+.host__navigation a:hover {
+    color: #161616;
+    text-decoration: underline;
+}
