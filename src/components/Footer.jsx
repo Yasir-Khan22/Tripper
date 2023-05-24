@@ -5,7 +5,6 @@ import styled from "styled-components";
 const Footer_SC = styled.footer`
  margin-top: 20px;
  background: #000;
-  height: fit-content;
  color: #c7c3c3;
  height: 50px;
  text-align: center;
