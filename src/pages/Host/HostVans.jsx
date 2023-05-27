@@ -11,13 +11,11 @@ const Link_SC = styled.div`
     padding-block: 35px;
     padding-left: 40px;
 `
-
 const StyledImage = styled.img`
     height: 70px;
     border-radius: 5px;
     margin-right: 17px;
 `
-
 const HeadingOne = styled.h1`
     font-size: 2rem;
     font-weight: 600;
