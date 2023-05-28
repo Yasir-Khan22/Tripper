@@ -12,7 +12,7 @@ const Link_SC = styled.div`
     padding-left: 40px;
 `
 const StyledImage = styled.img`
-    height: 70px;
+    height: 120px;
     border-radius: 5px;
     margin-right: 17px;
 `
@@ -41,7 +41,8 @@ export default function HostVans() {
             <Link_SC key={van.id}>
                 <StyledImage src={van.imageUrl} alt={`Photo of ${van.name}`} />
                 <div className="host-van-info">
-                    <h3>{van.name}</h3>
+                    <h3>{van.type}</h3>
+                    <h2>{van.name}</h2>
                     <p>${van.price}/day</p>
                 </div>
             </Link_SC>
