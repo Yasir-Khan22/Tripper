@@ -57,7 +57,7 @@ export default function HostVanDetail() {
                 className="back-button"
             >
                 &larr; <span>Back To all Vans</span></Link>
-            <container>
+            <div>
                 <Section>
                     <StyledImage src={currentVan.imageUrl} width={150} />
                     <StyledDiv>
@@ -80,7 +80,7 @@ export default function HostVanDetail() {
                 </Navbar>
 
                 <Outlet context={{ currentVan: currentVan }} />
-            </container>
+            </div>
         </section>
     )
 }
