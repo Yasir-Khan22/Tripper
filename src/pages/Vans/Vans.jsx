@@ -16,11 +16,12 @@ export default function Vans() {
             .then(data => setVans(data))
     }, [])
 
+    const displayedVans = typeFilter ? (vans.filter(van => van.type === typeFilter)) : (vans)
     return (
         <div className="van-list-container">
             <h1>Explore our Van's.</h1>
             <div className="van-list">
-                {vans?.map(van => (
+                {displayedVans?.map(van => (
                     <div key={van.id} className="van-tile">
                         <Link to={`/vans/${van.id}`}>
                             <img src={van.imageUrl} />
