@@ -1,30 +1,32 @@
+import { set } from "lodash";
 import React, { useEffect, useState } from "react"
 import { Link, useSearchParams } from "react-router-dom"
 import styled from "styled-components";
 
 export default function Vans() {
 
-
-    const StyledLink = styled(Link)`
+    const StyledButton = styled.button`
     margin: 1.4rem 20px;
     background-color: #bdbdbd;
     color: #636363;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 10px 20px;
     font-weight: bold;
+    outline: none;
+    border: none;
     font-size: 1.2rem;
     margin-top: 20px;
     &:hover {
         text-decoration-line: underline;
     }
-    `
+    `;
+
     const [searchParams, setSearchParams] = useSearchParams();
+    const [vans, setVans] = useState([])
 
     const typeFilter = searchParams.get("type")
-    console.log(typeFilter)
 
-    const [vans, setVans] = useState([])
 
     useEffect(() => {
         fetch("http://localhost:3010/vans")
@@ -37,10 +39,10 @@ export default function Vans() {
         <div className="van-list-container">
             <h1>Explore our Van's.</h1>
             <div className="filterBtn" style={{ marginTop: "2rem" }}>
-                <StyledLink to="?type=Simple" className="simpleTag">Simple</StyledLink>
-                <StyledLink to="?type=Rugged" className="ruggedTag">Rugged</StyledLink>
-                <StyledLink to="?type=Luxury" className="luxuryTag">Luxury</StyledLink>
-                <StyledLink to="." className="clear-filters">Clear Filter</StyledLink>
+                <StyledButton onClick={() => setSearchParams({ type: "Simple" })} className="simpleTag">Simple</StyledButton>
+                <StyledButton onClick={() => setSearchParams({ type: "Rugged" })} className="ruggedTag">Rugged</StyledButton>
+                <StyledButton onClick={() => setSearchParams({ type: "Luxury" })} className="luxuryTag">Luxury</StyledButton>
+                <StyledButton onClick={() => setSearchParams({})} className="clear-filters">Clear Filter</StyledButton>
             </div>
             <div className="van-list">
                 {displayedVans?.map(van => (
