@@ -23,6 +23,7 @@ const StyledDiv = styled.div`
     justify-content: space-around;
     align-content: center;
 `
+
 export default function NotFound() {
     return (
         <StyledDiv>
