@@ -70,7 +70,7 @@ export default function HostVanDetail() {
                 <Navbar>
                     <NavLink className="navbar-link"
                         to="."
-                    >Detail</NavLink>
+                    >Details</NavLink>
                     <NavLink className="navbar-link"
                         to="pricing"
                     >Pricing</NavLink>
