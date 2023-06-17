@@ -1,5 +1,5 @@
 import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import About from './pages/About'
 import Vans from './pages/Vans/Vans'
 import Home from './pages/Home'
@@ -18,7 +18,7 @@ import NotFound from './pages/404'
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -45,7 +45,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes >
-    </>
+    </BrowserRouter>
   )
 }
 
